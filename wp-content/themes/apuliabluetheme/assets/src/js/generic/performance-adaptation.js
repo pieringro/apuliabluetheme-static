@@ -1,14 +1,21 @@
 import { isConnectionSlow } from "./utility.js";
 
 // const videoUrl = "https://www.apuliablue.it/wp-content/uploads/2024/06/ApuliaBlue-Video-Background.mp4";
-const videoUrl =
-  "/wp-content/themes/apuliabluetheme/assets/media/bg-video.mp4";
-const imageUrl =
-  "/wp-content/themes/apuliabluetheme/assets/media/bg-image.jpg";
+// const videoUrl =
+//   "./wp-content/themes/apuliabluetheme/assets/media/bg-video.mp4";
+// const imageUrl =
+//   "./wp-content/themes/apuliabluetheme/assets/media/bg-image.jpg";
 
 export class PerformanceAdaptation {
   constructor(jquery) {
     this.$ = jquery;
+
+    if (window.apuliaConfig) {
+      this.videoUrl = window.apuliaConfig.videoUrl;
+      this.imageUrl = window.apuliaConfig.imageUrl;
+    } else {
+      console.error("Errore: apuliaConfig non trovato nell'HTML");
+    }
   }
 
   init() {
@@ -58,14 +65,14 @@ export class PerformanceAdaptation {
 
   #setImageBackground() {
     if (!this.$imageElement.attr("src")) {
-      this.$imageElement.attr("src", imageUrl);
+      this.$imageElement.attr("src", this.imageUrl);
     }
     this.$imageElement.show();
   }
 
   #setVideoBackground() {
     const videoSource = $("<source>")
-      .attr("src", videoUrl)
+      .attr("src", this.videoUrl)
       .attr("type", "video/mp4");
     this.$videoElement.append(videoSource);
     this.$videoElement.show(); // Mostra il video
