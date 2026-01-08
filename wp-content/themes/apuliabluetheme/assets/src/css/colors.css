@@ -1,0 +1,29 @@
+:root {
+  --color-palette1: #2f4858;
+  --color-palette2: #33658a;
+  --color-palette3: #86bbd8;
+  --color-palette3t: #86bbd854;
+  --color-palette3-4: #a2b8ae;
+  --color-palette4: #f6ae2d;
+  --color-palette5: #f26419;
+
+  --color-bleisure-background: #212529;
+  --color-bleisure-text: #f8f9fa;
+
+  --color-breakfast-highlight-background: #212529;
+  --color-breakfast-highlight-text: #f8f9fa;
+
+  --text-color-menu: #fff;
+  --text-color-menu-hovered: var(--color-palette4);
+  --text-color-label: #000;
+  --text-color-label-button: #005cbb;
+  --text-color-rooms: #000;
+
+  --swiper-scrollbar-drag-bg-color: var(--color-palette4);
+
+  --book-now-calendar-today-color: #000;
+  --book-now-calendar-today-bg: var(--color-palette3);
+  --book-now-calendar-active-color: #fff;
+  --book-now-calendar-active-bg: var(--color-palette2);
+  --book-now-calendar-hover-bg: #eee;
+}

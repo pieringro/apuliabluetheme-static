@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(./fonts/fa-solid-900.woff2) format("woff2"),
+    url(./fonts/fa-solid-900.woff) format("woff"),
+    url(./fonts/fa-solid-900.ttf) format("truetype"),
+    url(./fonts/fa-solid-ab-svg/index.html) format("svg");
+}
+
+.fa-regular {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.fa-home:before {
+  content: "\f015";
+}
+
+.fa-user:before {
+  content: "\f007";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.fa-cog:before {
+  content: "\f013";
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-star:before {
+  content: "\f005";
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+}
+
+.fa-edit:before {
+  content: "\f044";
+}
+
+.fa-save:before {
+  content: "\f0c7";
+}
+
+.fa-camera:before {
+  content: "\f030";
+}
+
+.fa-comments:before {
+  content: "\f086";
+}
+
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+.fa-lock:before {
+  content: "\f023";
+}
+
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+.fa-calendar:before {
+  content: "\f073";
+}
+
+.fa-clock:before {
+  content: "\f017";
+}
+
+.fa-map:before {
+  content: "\f279";
+}
+
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+.fa-music:before {
+  content: "\f001";
+}
+
+.fa-video:before {
+  content: "\f03d";
+}
+
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+.fa-wifi:before {
+  content: "\f1eb";
+}
+
+.fa-book:before {
+  content: "\f02d";
+}
+
+.fa-print:before {
+  content: "\f02f";
+}
+
+.fa-download:before {
+  content: "\f019";
+}
+
+.fa-upload:before {
+  content: "\f093";
+}
+
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+.fa-sun:before {
+  content: "\f185";
+}
+
+.fa-moon:before {
+  content: "\f186";
+}
+
+.fa-car:before {
+  content: "\f1b9";
+}
+
+.fa-bicycle:before {
+  content: "\f206";
+}
+
+.fa-plane:before {
+  content: "\f072";
+}
+
+.fa-ship:before {
+  content: "\f21a";
+}
+
+.fa-train:before {
+  content: "\f238";
+}
+
+.fa-bus:before {
+  content: "\f207";
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+.fa-xmark:before {
+  content: "\f00d";
+}
+
+.fa-arrow-down:before {
+  content: "\f107";
+}
+
+.fa-arrow-up {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
+.fa-arrow-up:before {
+  content: "\f107";
+}
+
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+.fa-person:before {
+  content: "\f183";
+}
+
+.fa-xmark:before {
+  content: "\f00d";
+}
+
+/* Add more icons as needed */

@@ -1,0 +1,35 @@
+.wp-block-image {
+  margin-bottom: 10px;
+  img {
+    border-radius: 10px;
+  }
+
+  &.control-height {
+    text-align: center;
+    img {
+      max-height: 460px;
+      object-fit: cover;
+    }
+  }
+}
+
+.wp-block-2-images {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 5px;
+  img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .wp-block-2-images {
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
+  }
+}

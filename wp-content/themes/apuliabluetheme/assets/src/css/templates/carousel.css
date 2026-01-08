@@ -1,0 +1,27 @@
+.carousel-slider {
+  .swiper-slide-active {
+    text-align: center;
+    width: 100%;
+  }
+
+  .swiper-slide img {
+    margin: auto;
+    max-height: 80vh;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--color-palette4);
+  }
+}
+
+.carousel-slider.swiper-button-prev,
+.carousel-slider.swiper-button-next {
+  color: var(--color-palette4);
+}

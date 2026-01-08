@@ -1,0 +1,31 @@
+@import url("./lib/swiper/swiper.min.css");
+@import url("./lib/slick/slick.css");
+@import url("./lib/slick/slick-theme.css");
+@import url("./lib/animate/animate.min.css");
+@import url("./lib/date/daterangepicker.css");
+@import url("./animations.css");
+@import url("./animation-hearts.css");
+@import url("./colors.css");
+@import url("./icons.css");
+@import url("./generic.css");
+@import url("./header.css");
+@import url("./menu.css");
+@import url("./index-base.css");
+
+/* templates */
+@import url("./templates/carousel.css");
+@import url("./templates/accordion.css");
+@import url("./templates/expandable.css");
+@import url("./templates/our-rooms.css");
+@import url("./templates/reviews.css");
+@import url("./templates/welcome.css");
+@import url("./templates/our-alloggi.css");
+@import url("./templates/index0.css");
+@import url("./templates/index1.css");
+/* @import url('./book-now.css'); */
+@import url("./templates/our-story.css");
+@import url("./templates/simple-page.css");
+
+@import url("./wp-posts/generic.css");
+@import url("./generic-template-page.css");
+@import url("./templates/bleisure-travel.css");
