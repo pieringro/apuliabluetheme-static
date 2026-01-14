@@ -163,39 +163,48 @@ nameB&amp;B ApuliaBlue Bari\ndescriptionApuliaBlue apartments Bleisure Travel Ba
   </section>
   
   <section class="story-section margin-bottom-100 curve-effect">
-    <div class="contact-form-container">
-      <form action="https://formsubmit.co/pierprogramm@gmail.com" method="POST" class="styled-form">
-          
-          <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://www.apuliablue.it/grazie">
+    <div class="contact-form-container animated animate-text-focus-in">
+      
+    <div class="contact-wrapper">
+    
+      <div id="form-success-message" style="display:none; text-align: center; padding: 40px 20px;">
+          <i class="fas fa-check-circle" style="font-size: 3rem; color: #38bdf8; margin-bottom: 20px;"></i>
+          <h3 style="color: #fff;">Messaggio Inviato!</h3>
+          <p style="color: #94a3b8;">Grazie per averci contattato. Ti risponderemo il prima possibile.</p>
+      </div>
 
-          <div class="form-group">
-              <label for="name">Nome Completo</label>
-              <input type="text" id="name" name="name" required placeholder="Mario Rossi">
-          </div>
+      <form id="ajax-contact-form" action="https://formsubmit.co/ajax/pierprogramm@gmail.com" method="POST" class="styled-form">
+        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_template" value="table"> 
 
-          <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="mario@email.com">
-          </div>
+        <div class="form-group">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name" name="name" required placeholder="Il tuo nome">
+        </div>
 
-          <div class="form-group">
-              <label for="subject">Oggetto</label>
-              <select id="subject" name="subject">
-                  <option value="Info Generali">Informazioni Generali</option>
-                  <option value="Prenotazione">Richiesta Disponibilità</option>
-                  <option value="Altro">Altro</option>
-              </select>
-          </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="La tua email">
+        </div>
 
-          <div class="form-group">
-              <label for="message">Messaggio</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Scrivi qui la tua richiesta..."></textarea>
-          </div>
+        <div class="form-group">
+            <label for="message">Messaggio</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Come possiamo aiutarti?"></textarea>
+        </div>
 
-          <button type="submit" class="submit-btn">Invia Messaggio</button>
+        <button type="submit" id="form-submit-btn" class="submit-btn">
+            <span class="btn-text">Invia Messaggio</span>
+            <span class="btn-loader" style="display: none"><i class="fa-solid fa-spinner fa-spin"></i> Invio...</span>
+        </button>
+        
+        <div id="form-error-message" style="display:none; color: #ef4444; margin-top: 10px; font-size: 0.9rem;">
+            Si è verificato un errore. Per favore riprova più tardi o scrivici direttamente a info@apuliablue.it
+        </div>
       </form>
+    </div>
+
     </div>
   
     </section>
