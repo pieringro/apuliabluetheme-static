@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8">
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>ApuliaBlue B&B - Bari</title>
     
-    <title>Loading...</title>
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
+    
     <script>
         (function() {
             // Logica Router JS
             // Recupera la lingua (primi 2 caratteri), fallback su 'it'
             var lang = (navigator.language || navigator.userLanguage || 'it').substring(0, 2);
             
-            // Definisci i target (Relative paths per compatibilità GitHub)
+            // Definisci i target (Relative paths per compatibilità GitHub/Netsons)
             var target = (lang === 'en') ? 'en/' : 'it/';
             
             // Esegui il redirect
             window.location.replace(target);
         })();
     </script>
-    <noscript><meta http-equiv="refresh" content="0;url=it/"><a href="https://apuliablue.it/it/">Italiano</a>
-    <a href="https://apuliablue.it/en/">English</a></noscript>
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=it/">
+        <a href="https://apuliablue.it/it/">Italiano</a>
+        <a href="https://apuliablue.it/en/">English</a>
+    </noscript>
 </head>
 <body></body>
 </html>
